@@ -135,7 +135,7 @@ sudo docker build -t liberty-node .
 ```
 
 #### 2.4. Run the Docker Container
-Use a single command line with && to run each step:
+Use a single command line to run:
 
 ```bash
 docker run -d --name liberty-node \
@@ -147,6 +147,11 @@ docker run -d --name liberty-node \
     liberty-node
 ```
 set your address for rewards and the number of cpu threads that will be allocated for mining
+
+Display logs in real-time
+```bash
+docker logs -f liberty-node
+```
 
 ### 3. Manual Configuration (Advanced Users)
 For advanced or customized setups, you can configure everything manually:
