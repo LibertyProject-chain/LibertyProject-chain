@@ -94,10 +94,8 @@ sudo apt update && sudo apt install -y curl ufw jq openssl file
 Download deploy_liberty_node.sh from this repository:
 
 ```bash
-curl -L https://raw.githubusercontent.com/<YourGitHubUser>/<YourRepo>/main/deploy_liberty_node.sh -o deploy_liberty_node.sh
+curl -L https://raw.githubusercontent.com/LibertyProject-chain/LibertyProject-chain/main/deploy_liberty_node.sh -o deploy_liberty_node.sh
 ```
-(Replace <YourGitHubUser> and <YourRepo> with the actual user/repo names.)
-
 #### 1.3. Make It Executable
 ```bash
 chmod +x deploy_liberty_node.sh
@@ -128,9 +126,8 @@ sudo apt update && sudo apt install -y docker.io
 
 #### 2.2. Download the Dockerfile
 ```bash
-curl -L https://raw.githubusercontent.com/<YourGitHubUser>/<YourRepo>/main/Dockerfile -o Dockerfile
+curl -L https://raw.githubusercontent.com/LibertyProject-chain/LibertyProject-chain/main/Dockerfile -o Dockerfile
 ```
-(Replace <YourGitHubUser> and <YourRepo> accordingly. Make sure the Dockerfile is present in your repo.)
 
 #### 2.3. Build the Docker Image
 ```bash
@@ -145,10 +142,8 @@ sudo docker run -d --name liberty-node-container \
   -p 40404:40404/tcp -p 40404:40404/udp -p 9945:9945/tcp \
   --restart always liberty-node
 ```
--p 40404:40404/tcp -p 40404:40404/udp exposes the P2P port.
--p 9945:9945/tcp exposes the RPC port.
---restart always ensures the container restarts on system reboot.
-At this point, your Liberty node is running inside a Docker container named liberty-node-container.
+- -p 40404:40404/tcp -p 40404:40404/udp exposes the P2P port.
+- -p 9945:9945/tcp exposes the RPC port.
 
 ### 3. Manual Configuration (Advanced Users)
 For advanced or customized setups, you can configure everything manually:
@@ -166,13 +161,13 @@ sudo chown liberty:liberty /home/liberty/liberty
 
 #### 3.3. Download Node Software
 ```bash
-sudo curl -L https://github.com/LibertyProject-chain/Liberty-Project-testnet-phase-3/releases/download/v0.42/geth -o /usr/local/bin/geth
+sudo curl -L https://github.com/LibertyProject-chain/LibertyProject-chain/releases/download/v0.6.7/geth -o /usr/local/bin/geth
 sudo chmod +x /usr/local/bin/geth
 ```
 
 #### 3.4. Download and Initialize the Genesis File
 ```bash
-sudo curl -L https://github.com/LibertyProject-chain/Liberty-Project-testnet-phase-3/releases/download/v0.42/genesis.json -o /home/liberty/liberty/genesis.json
+sudo curl -L https://github.com/LibertyProject-chain/LibertyProject-chain/releases/download/v0.6.7/genesis.json -o /home/liberty/liberty/genesis.json
 sudo chown liberty:liberty /home/liberty/liberty/genesis.json
 sudo -u liberty geth --datadir /home/liberty/liberty init /home/liberty/liberty/genesis.json
 ```
@@ -188,7 +183,7 @@ After=network.target
 [Service]
 User=liberty
 ExecStart=/usr/local/bin/geth --datadir /home/liberty/liberty \
---networkid 21103 \
+--networkid 16384 \
 --port 40404 \
 --mine \
 --miner.threads=16 \
@@ -242,7 +237,7 @@ sudo systemctl daemon-reload
 #### (Optional) Remove Node Data and Binaries
 If you want to remove everything:
 
-####  Script / Manual installations typically store data in /home/<user>/go-liberty/ or /root/go-liberty/. Remove that folder:
+Script / Manual installations typically store data in /home/<user>/go-liberty/ or /root/go-liberty/. Remove that folder:
 ```bash
 sudo rm -rf /home/<user>/go-liberty
 ```
