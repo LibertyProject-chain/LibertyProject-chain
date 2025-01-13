@@ -138,12 +138,15 @@ sudo docker build -t liberty-node .
 Use a single command line with && to run each step:
 
 ```bash
-sudo docker run -d --name liberty-node-container \
-  -p 40404:40404/tcp -p 40404:40404/udp -p 9945:9945/tcp \
-  --restart always liberty-node
+docker run -d --name liberty-node \
+    -p 40404:40404/tcp \
+    -p 40404:40404/udp \
+    -p 9945:9945/tcp \
+    -e MINER_ADDRESS=0xYourCoinbaseAddress \
+    -e MINER_THREADS=4 \
+    liberty-node
 ```
-- -p 40404:40404/tcp -p 40404:40404/udp exposes the P2P port.
-- -p 9945:9945/tcp exposes the RPC port.
+set your address for rewards and the number of cpu threads that will be allocated for mining
 
 ### 3. Manual Configuration (Advanced Users)
 For advanced or customized setups, you can configure everything manually:
