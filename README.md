@@ -20,7 +20,7 @@ Our code has been modified to optimize the mining process and test dynamic block
 |    - target = 2^256 / header.Difficulty                     |
 +-------------------------------------------------------------+
 | 3. Initialize Variables                                     |
-|    - nonce = seed, powBuffer = big.Int, iterCount = 3000    |
+|    - nonce = seed, powBuffer = big.Int, iterCount = 300000+ |
 +-------------------------------------------------------------+
 | 4. Start Nonce Search                                       |
 |    - Loop until a valid nonce is found or signal received   |
@@ -80,7 +80,11 @@ This repository provides three ways to deploy a Liberty node:
 ### Quick Setup with Docker (for container-based deployments)
 ### Manual Configuration (for advanced users)
 
+Your node will be deployed with a specific set of api. including an rpc to connect an external miner.
+so your own local rpc server is located at http://ip_node:9945.
+
 After deploying your node, instructions are included for stopping and removing the service.
+
 
 ### 1. Quick Setup via Script
 #### 1.1. Install Dependencies
