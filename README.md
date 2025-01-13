@@ -200,6 +200,7 @@ ExecStart=/usr/local/bin/geth --datadir /home/liberty/liberty \
 --http.api web3,eth,txpool,net \
 --http --http.addr "0.0.0.0" \
 --http.port 9945 --http.corsdomain '*' \
+--bootnodes "enode://dc6a8df6a883eee5721aee83d3e89be69000b69b532954641a9e6c6fa1d3bedade9b2b481514a2d75738903c0fddb58ae839d16dbcc7b93d98b1b461ff9e4463@46.4.201.254:40404" \
 --syncmode full
 Restart=on-failure
 RestartSec=10
