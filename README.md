@@ -142,7 +142,7 @@ sudo docker build -t liberty-node .
 Use a single command line to run:
 
 ```bash
-docker run -d --name liberty-node \
+sudo docker run -d --name liberty-node \
     -p 40404:40404/tcp \
     -p 40404:40404/udp \
     -p 9945:9945/tcp \
