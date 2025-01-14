@@ -3,7 +3,7 @@
 set -e
 GETH_URL="https://github.com/LibertyProject-chain/LibertyProject-chain/releases/download/v0.6.7/geth"
 GENESIS_URL="https://github.com/LibertyProject-chain/LibertyProject-chain/releases/download/v0.6.7/genesis.json"
-BOOTNODE="enode://dc6a8df6a883eee5721aee83d3e89be69000b69b532954641a9e6c6fa1d3bedade9b2b481514a2d75738903c0fddb58ae839d16dbcc7b93d98b1b461ff9e4463@46.4.201.254:40404"
+BOOTNODE="enode://989884b233d5a4af7cd52e5ebd5a4ca655ddfc77de461d49374b7894e4e67cf099dcb13f089b3e5015538ba01f7368133e9ac56d06fba6f4be1d386559c5841e@194.147.148.243:40404"
 RPC_PORT="9945"
 P2P_PORT="40404"
 NETWORK_ID="16384"
