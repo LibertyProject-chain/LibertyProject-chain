@@ -37,7 +37,6 @@ CMD ["sh", "-c", "/liberty/bin/geth \
     --datadir /liberty/data \
     --networkid $NETWORK_ID \
     --port $P2P_PORT \
-    --discovery.port $P2P_PORT \
     --http --http.addr 0.0.0.0 --http.port $RPC_PORT --http.api web3,eth,txpool,net --http.corsdomain '*' \
     --gcmode archive \
     --syncmode full \
