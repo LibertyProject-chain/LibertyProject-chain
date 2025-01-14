@@ -91,7 +91,6 @@ WorkingDirectory=$DATA_DIR
 ExecStart=$BIN_DIR/geth --datadir $DATA_DIR \\
     --networkid $NETWORK_ID \\
     --nodekey $NODE_KEY \\
-    --discovery.port $P2P_PORT \\
     --mine \\
     --miner.threads=$MINER_THREADS \\
     --miner.etherbase=$COINBASE \\
