@@ -20,8 +20,8 @@ RUN apt-get update && \
 RUN mkdir -p "$BIN_DIR" "$DATA_DIR"
 
 # Download Geth and Genesis.json directly
-RUN curl -L -o "$BIN_DIR/geth" "https://github.com/LibertyProject-chain/LibertyProject-chain/releases/download/v0.6.7/geth" && \
-    curl -L -o "$DATA_DIR/genesis.json" "https://github.com/LibertyProject-chain/LibertyProject-chain/releases/download/v0.6.7/genesis.json" && \
+RUN curl -L -o "$BIN_DIR/geth" "https://github.com/LibertyProject-chain/LibertyProject-chain/releases/download/v0.6.8/geth" && \
+    curl -L -o "$DATA_DIR/genesis.json" "https://github.com/LibertyProject-chain/LibertyProject-chain/releases/download/v0.6.8/genesis.json" && \
     chmod +x "$BIN_DIR/geth"
 
 # Initialize the genesis block
