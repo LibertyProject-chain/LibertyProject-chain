@@ -1,8 +1,8 @@
 #!/bin/bash
 
 set -e
-GETH_URL="https://github.com/LibertyProject-chain/LibertyProject-chain/releases/download/v0.6.7/geth"
-GENESIS_URL="https://github.com/LibertyProject-chain/LibertyProject-chain/releases/download/v0.6.7/genesis.json"
+GETH_URL="https://github.com/LibertyProject-chain/LibertyProject-chain/releases/download/v0.6.8/geth"
+GENESIS_URL="https://github.com/LibertyProject-chain/LibertyProject-chain/releases/download/v0.6.8/genesis.json"
 BOOTNODE="enode://989884b233d5a4af7cd52e5ebd5a4ca655ddfc77de461d49374b7894e4e67cf099dcb13f089b3e5015538ba01f7368133e9ac56d06fba6f4be1d386559c5841e@194.147.148.243:40404"
 RPC_PORT="9945"
 P2P_PORT="40404"
