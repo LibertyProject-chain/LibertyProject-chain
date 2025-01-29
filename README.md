@@ -48,7 +48,7 @@ Our code has been modified to optimize the mining process and test dynamic block
 +-------------------------------------------------------------+
 ```
 More info in:
-- [Discord Liberty Project](https://discord.gg/YScZV34j)
+- [Discord Liberty Project](https://discord.gg/uM9npeYtur)
 - [Explorer Lyberty Project](https://explorer.libertyproject.space)
 - [Website Lyberty Project](https://libertyproject.space)
 
