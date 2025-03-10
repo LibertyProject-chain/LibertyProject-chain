@@ -1,0 +1,5 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+*.sol linguist-language=Solidity
+tests/files/VMTests/vmInputLimits.json filter=lfs diff=lfs merge=lfs -text
+tests/files/VMTests/vmInputLimitsTest1.json filter=lfs diff=lfs merge=lfs -text
