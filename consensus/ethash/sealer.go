@@ -236,7 +236,7 @@ type mineResult struct {
 	mixDigest    common.Hash
 	hash         common.Hash
 	errc         chan error
-	minerAddress common.Address // Добавляем поле для хранения адреса майнера
+	minerAddress common.Address
 }
 
 // hashrate wraps the hash rate submitted by the remote sealer.

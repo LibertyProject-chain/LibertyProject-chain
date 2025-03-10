@@ -789,7 +789,7 @@ func TestConcurrentDiskCacheGeneration(t *testing.T) {
 				CacheDir:     cachedir,
 				CachesOnDisk: 1,
 			}
-			ethash := New(config, nil, false, keystorePath) // Передаем keystorePath
+			ethash := New(config, nil, false, keystorePath)
 			defer ethash.Close()
 			if err := ethash.verifySeal(nil, block.Header(), false); err != nil {
 				t.Errorf("proc %d: block verification failed: %v", idx, err)
