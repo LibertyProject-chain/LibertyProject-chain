@@ -54,7 +54,7 @@ var epochs = []Epoch{
 	},
 	{
 		Name:          "Unity",
-		StartBlock:    51,
+		StartBlock:    500001,
 		TotalReward:   coinsToWei("9.0"),
 		MinerReward:   coinsToWei("5.8"),
 		StakingReward: coinsToWei("1.7"),
@@ -62,7 +62,7 @@ var epochs = []Epoch{
 	},
 	{
 		Name:          "Justice",
-		StartBlock:    101,
+		StartBlock:    1050001,
 		TotalReward:   coinsToWei("8.5"),
 		MinerReward:   coinsToWei("5.1"),
 		StakingReward: coinsToWei("2.2"),
@@ -70,7 +70,7 @@ var epochs = []Epoch{
 	},
 	{
 		Name:          "Equality",
-		StartBlock:    151,
+		StartBlock:    1650001,
 		TotalReward:   coinsToWei("8.0"),
 		MinerReward:   coinsToWei("4.2"),
 		StakingReward: coinsToWei("2.8"),
@@ -78,7 +78,7 @@ var epochs = []Epoch{
 	},
 	{
 		Name:          "Prosperity",
-		StartBlock:    201,
+		StartBlock:    2300001,
 		TotalReward:   coinsToWei("7.5"),
 		MinerReward:   coinsToWei("3.0"),
 		StakingReward: coinsToWei("3.6"),
@@ -86,7 +86,7 @@ var epochs = []Epoch{
 	},
 	{
 		Name:          "Integrity",
-		StartBlock:    251,
+		StartBlock:    3300001,
 		TotalReward:   coinsToWei("7.0"),
 		MinerReward:   coinsToWei("3.2"),
 		StakingReward: coinsToWei("3.0"),
@@ -94,7 +94,7 @@ var epochs = []Epoch{
 	},
 	{
 		Name:          "Valor",
-		StartBlock:    301,
+		StartBlock:    4400001,
 		TotalReward:   coinsToWei("6.5"),
 		MinerReward:   coinsToWei("3.4"),
 		StakingReward: coinsToWei("2.5"),
@@ -102,7 +102,7 @@ var epochs = []Epoch{
 	},
 	{
 		Name:          "Wisdom",
-		StartBlock:    351,
+		StartBlock:    5700001,
 		TotalReward:   coinsToWei("6.0"),
 		MinerReward:   coinsToWei("3.7"),
 		StakingReward: coinsToWei("1.8"),
@@ -110,7 +110,7 @@ var epochs = []Epoch{
 	},
 	{
 		Name:          "Peace",
-		StartBlock:    401,
+		StartBlock:    7500001,
 		TotalReward:   coinsToWei("5.5"),
 		MinerReward:   coinsToWei("3.8"),
 		StakingReward: coinsToWei("1.3"),
@@ -118,7 +118,7 @@ var epochs = []Epoch{
 	},
 	{
 		Name:          "Legacy",
-		StartBlock:    451,
+		StartBlock:    9400001,
 		TotalReward:   coinsToWei("5.0"),
 		MinerReward:   coinsToWei("3.6"),
 		StakingReward: coinsToWei("1.0"),
@@ -126,7 +126,7 @@ var epochs = []Epoch{
 	},
 	{
 		Name:          "Finality",
-		StartBlock:    501,
+		StartBlock:    11400001,
 		TotalReward:   coinsToWei("4.5"),
 		MinerReward:   coinsToWei("3.3"),
 		StakingReward: coinsToWei("0.8"),
